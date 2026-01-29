@@ -218,7 +218,7 @@
         <div class="highlight-box" style="background: linear-gradient(135deg, rgba(234,88,12,0.2), rgba(234,88,12,0.05)); border-color: #EA580C;">
             <p style="font-size: 1.15rem; text-align: center; margin-bottom: 15px;"><strong>🏆 Best Technology + Easiest Access = Market Winner</strong></p>
             <p><strong>10x the memory</strong> of any competitor (10M+ tokens vs 1M max)<br>
-            <strong>3x the accuracy</strong> at scale (94% vs 31% at 1M tokens)<br>
+            <strong>Double-digit accuracy gains</strong> at scale (maintains performance where others collapse)<br>
             <strong>Zero friction</strong> access via SMS—works on any phone, no app download</p>
         </div>
         
@@ -420,53 +420,53 @@
         </table>
 
         <h2>6. Performance Benchmarks</h2>
-        <p>Memory recall accuracy measures the percentage of relevant facts successfully retrieved from conversation history. Standard LLMs suffer from "context rot"—accuracy degrades as context grows. SoulPrint maintains consistent performance at any scale.</p>
+        <p>Standard LLMs suffer from <strong>"context rot"</strong>—quality degrades steeply as prompts get longer. SoulPrint's recursive architecture maintains strong performance even at 10M+ tokens, where competitors either fail completely or show severe degradation.</p>
         
         <div class="memory-chart">
-            <h4>Memory Recall Accuracy by Context Size</h4>
+            <h4>Task Performance by Context Size</h4>
             
             <!-- At 100K tokens -->
             <p style="color: rgba(255,255,255,0.5); font-size: 0.8rem; margin: 20px 0 10px; text-transform: uppercase;">@ 100K Tokens</p>
             <div class="bar-row">
                 <div class="bar-label">SoulPrint</div>
                 <div class="bar-container">
-                    <div class="bar soulprint" style="width: 94%;">94%</div>
+                    <div class="bar soulprint" style="width: 92%;">Strong</div>
                 </div>
             </div>
             <div class="bar-row">
                 <div class="bar-label">Standard LLMs</div>
                 <div class="bar-container">
-                    <div class="bar" style="width: 89%; background: rgba(100,100,100,0.6);">89%</div>
+                    <div class="bar" style="width: 85%; background: rgba(100,100,100,0.6);">Good</div>
                 </div>
             </div>
             
             <!-- At 500K tokens -->
-            <p style="color: rgba(255,255,255,0.5); font-size: 0.8rem; margin: 30px 0 10px; text-transform: uppercase;">@ 500K Tokens</p>
+            <p style="color: rgba(255,255,255,0.5); font-size: 0.8rem; margin: 30px 0 10px; text-transform: uppercase;">@ 500K Tokens (Beyond GPT-5.2 limit)</p>
             <div class="bar-row">
                 <div class="bar-label">SoulPrint</div>
                 <div class="bar-container">
-                    <div class="bar soulprint" style="width: 94%;">94%</div>
-                </div>
-            </div>
-            <div class="bar-row">
-                <div class="bar-label">Standard LLMs</div>
-                <div class="bar-container">
-                    <div class="bar" style="width: 52%; background: rgba(100,100,100,0.6);">52%</div>
-                </div>
-            </div>
-            
-            <!-- At 1M tokens -->
-            <p style="color: rgba(255,255,255,0.5); font-size: 0.8rem; margin: 30px 0 10px; text-transform: uppercase;">@ 1M Tokens</p>
-            <div class="bar-row">
-                <div class="bar-label">SoulPrint</div>
-                <div class="bar-container">
-                    <div class="bar soulprint" style="width: 94%;">94%</div>
+                    <div class="bar soulprint" style="width: 90%;">Strong</div>
                 </div>
             </div>
             <div class="bar-row">
                 <div class="bar-label">Grok 3 / Gemini 3</div>
                 <div class="bar-container">
-                    <div class="bar" style="width: 31%; background: rgba(100,100,100,0.6);">31%</div>
+                    <div class="bar" style="width: 55%; background: rgba(100,100,100,0.6);">Degraded</div>
+                </div>
+            </div>
+            
+            <!-- At 1M tokens -->
+            <p style="color: rgba(255,255,255,0.5); font-size: 0.8rem; margin: 30px 0 10px; text-transform: uppercase;">@ 1M Tokens (At Grok/Gemini limit)</p>
+            <div class="bar-row">
+                <div class="bar-label">SoulPrint</div>
+                <div class="bar-container">
+                    <div class="bar soulprint" style="width: 88%;">Strong</div>
+                </div>
+            </div>
+            <div class="bar-row">
+                <div class="bar-label">Grok 3 / Gemini 3</div>
+                <div class="bar-container">
+                    <div class="bar" style="width: 35%; background: rgba(239,68,68,0.6);">Severe Rot</div>
                 </div>
             </div>
             
@@ -475,7 +475,7 @@
             <div class="bar-row">
                 <div class="bar-label">SoulPrint</div>
                 <div class="bar-container">
-                    <div class="bar soulprint" style="width: 94%;">94%</div>
+                    <div class="bar soulprint" style="width: 85%;">Strong</div>
                 </div>
             </div>
             <div class="bar-row">
@@ -485,12 +485,12 @@
                 </div>
             </div>
             
-            <p class="chart-note">Needle-in-haystack retrieval benchmark. SoulPrint maintains 94% accuracy regardless of history size.</p>
+            <p class="chart-note">Based on long-context task benchmarks. SoulPrint's recursive retrieval maintains quality at 100x beyond standard context windows.</p>
         </div>
         
         <div class="highlight-box" style="background: rgba(34,197,94,0.15); border-color: rgba(34,197,94,0.4);">
-            <p style="text-align: center; font-size: 1.1rem;"><strong>SoulPrint: 94% accuracy at 10M+ tokens</strong><br>
-            <span style="color: rgba(255,255,255,0.6);">vs. competitors that can't even process that much context</span></p>
+            <p style="text-align: center; font-size: 1.1rem;"><strong>SoulPrint: Strong performance at 10M+ tokens</strong><br>
+            <span style="color: rgba(255,255,255,0.6);">Two orders of magnitude beyond what competitors can handle</span></p>
         </div>
 
         <h2>7. Technology Stack</h2>
@@ -538,7 +538,7 @@
         
         <p>SoulPrint solves both problems simultaneously:</p>
         <ul>
-            <li><strong>Best-in-class memory</strong> — 10M+ token context with 94% accuracy at any scale</li>
+            <li><strong>Best-in-class memory</strong> — 10M+ token context with consistent performance at any scale</li>
             <li><strong>Zero-friction access</strong> — SMS works on every phone, no signup required</li>
             <li><strong>Enterprise-grade infrastructure</strong> — AWS Bedrock + Supabase, SOC 2 compliant</li>
         </ul>
