@@ -395,7 +395,7 @@
         </ul>
 
         <h2>5. Privacy Architecture</h2>
-        <p>All initial processing occurs client-side in the user's browser:</p>
+        <p>All initial processing occurs client-side in the user's browser. Server-side data lives in <strong>Supabase</strong> (encrypted PostgreSQL), while AI inference runs on <strong>AWS Bedrock</strong>—enterprise-grade cloud infrastructure with SOC 2 compliance:</p>
         
         <table>
             <thead>
@@ -403,9 +403,9 @@
             </thead>
             <tbody>
                 <tr><td>Raw conversation text</td><td>Client only</td><td>Never transmitted</td></tr>
-                <tr><td>Semantic embeddings</td><td>Client → Server</td><td>Encrypted at rest (AES-256)</td></tr>
-                <tr><td>User profile</td><td>Client → Server</td><td>Encrypted at rest</td></tr>
-                <tr><td>Ongoing chat</td><td>Server</td><td>Encrypted, user-deletable</td></tr>
+                <tr><td>Semantic embeddings</td><td>AWS Bedrock (Titan)</td><td>Supabase (encrypted)</td></tr>
+                <tr><td>User profile</td><td>Client → Server</td><td>Supabase (encrypted)</td></tr>
+                <tr><td>Ongoing chat</td><td>AWS Bedrock (Claude)</td><td>Supabase (user-deletable)</td></tr>
             </tbody>
         </table>
 
@@ -436,7 +436,7 @@
             <tbody>
                 <tr><td>Frontend</td><td>Next.js 16, React, TypeScript</td></tr>
                 <tr><td>API</td><td>Edge Functions, Streaming SSE</td></tr>
-                <tr><td>Database</td><td>PostgreSQL with pgvector extension</td></tr>
+                <tr><td>Database</td><td>Supabase (PostgreSQL + pgvector)</td></tr>
                 <tr><td>Authentication</td><td>OAuth 2.0, JWT</td></tr>
                 <tr><td>LLM Inference</td><td>AWS Bedrock (Claude)</td></tr>
                 <tr><td>Embeddings</td><td>Amazon Titan Embeddings (AWS)</td></tr>
