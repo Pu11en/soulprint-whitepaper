@@ -329,6 +329,31 @@
             </tbody>
         </table>
 
+        <h3>How Recursive Retrieval Works</h3>
+        <p>SoulPrint's breakthrough is a <strong>recursive context assembly</strong> process that dynamically retrieves and synthesizes memories at query time:</p>
+        
+        <div class="highlight-box">
+            <p><strong>Step 1: Query Understanding</strong><br>
+            When you send a message, SoulPrint first analyzes your query to identify key concepts, entities, and intent. This creates a semantic fingerprint of what you're asking about.</p>
+        </div>
+        
+        <div class="highlight-box" style="background: rgba(34,197,94,0.1); border-color: rgba(34,197,94,0.3);">
+            <p><strong>Step 2: Multi-Pass Retrieval</strong><br>
+            Unlike single-pass RAG systems, SoulPrint performs <em>recursive retrieval</em>—each retrieved memory can trigger additional retrievals for related context. If you mention "that project we discussed," SoulPrint retrieves the project reference, then recursively fetches related conversations about that project.</p>
+        </div>
+        
+        <div class="highlight-box" style="background: rgba(59,130,246,0.1); border-color: rgba(59,130,246,0.3);">
+            <p><strong>Step 3: Context Synthesis</strong><br>
+            Retrieved memories are ranked by relevance, recency, and importance. The system synthesizes a coherent context window—your SoulPrint profile + most relevant memories + current query—that fits within the LLM's native context while preserving the most critical information.</p>
+        </div>
+        
+        <div class="highlight-box" style="background: rgba(168,85,247,0.1); border-color: rgba(168,85,247,0.3);">
+            <p><strong>Step 4: Continuous Learning</strong><br>
+            After each conversation, new memories are chunked, embedded, and indexed in real-time. The system learns which memories are frequently accessed together and optimizes retrieval paths—getting smarter the more you use it.</p>
+        </div>
+
+        <p>This recursive approach means SoulPrint doesn't just search your history—it <em>understands</em> the relationships between your conversations and can follow conceptual threads across months or years of interaction.</p>
+
         <h2>4. Why Messaging Beats Web Apps</h2>
         
         <div class="comparison">
