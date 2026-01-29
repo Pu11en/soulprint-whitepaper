@@ -296,7 +296,7 @@
 │  └──────────────────────────────────────────────────────────┘  │
 │  ┌──────────────────────────────────────────────────────────┐  │
 │  │              Vector Embedding Layer                       │  │
-│  │  • 1536-dimensional dense vectors                        │  │
+│  │  • 1024-dimensional dense vectors                        │  │
 │  │  • Semantic similarity encoding                          │  │
 │  │  • Sub-100ms embedding generation                        │  │
 │  └──────────────────────────────────────────────────────────┘  │
@@ -319,7 +319,7 @@
         <table>
             <tbody>
                 <tr><td>Chunk Size</td><td>512 tokens (optimized for semantic coherence)</td></tr>
-                <tr><td>Embedding Dimensions</td><td>1536 (text-embedding-3-small)</td></tr>
+                <tr><td>Embedding Dimensions</td><td>1024 (Amazon Titan)</td></tr>
                 <tr><td>Similarity Metric</td><td>Cosine distance</td></tr>
                 <tr><td>Index Type</td><td>HNSW (Hierarchical Navigable Small World)</td></tr>
                 <tr><td>Retrieval Latency</td><td>&lt;50ms for 1M+ chunks</td></tr>
@@ -411,8 +411,8 @@
                 <tr><td>API</td><td>Edge Functions, Streaming SSE</td></tr>
                 <tr><td>Database</td><td>PostgreSQL with pgvector extension</td></tr>
                 <tr><td>Authentication</td><td>OAuth 2.0, JWT</td></tr>
-                <tr><td>LLM Inference</td><td>AWS Bedrock</td></tr>
-                <tr><td>Embeddings</td><td>OpenAI text-embedding-3-small</td></tr>
+                <tr><td>LLM Inference</td><td>AWS Bedrock (Claude)</td></tr>
+                <tr><td>Embeddings</td><td>Amazon Titan Embeddings (AWS)</td></tr>
                 <tr><td>Vector Index</td><td>HNSW via pgvector</td></tr>
             </tbody>
         </table>
@@ -420,7 +420,7 @@
         <h2>8. References</h2>
         <ol>
             <li>Anthropic. (2024). <em>The Claude Model Card.</em> Context window limitations and performance characteristics.</li>
-            <li>OpenAI. (2024). <em>text-embedding-3 Technical Report.</em> Embedding model specifications.</li>
+            <li>AWS. (2024). <em>Amazon Titan Embeddings.</em> AWS Bedrock embedding model specifications.</li>
             <li>Johnson, M. et al. (2024). <em>Hierarchical Navigable Small World Graphs for Approximate Nearest Neighbor Search.</em></li>
         </ol>
 
